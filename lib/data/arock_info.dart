@@ -1,14 +1,16 @@
 class ArockInfo {
   int? id;
   String quote; // 명언
-  String from; // 인물
-  String birthYear; // 태어난 날
-  String deathYear; // 죽은 날
+  String who; // 인물
+  int star; // 별점
+  int birthYear; // 태어난 날
+  int deathYear; // 죽은 날
 
   ArockInfo({
     this.id,
     required this.quote,
-    required this.from,
+    required this.who,
+    required this.star,
     required this.birthYear,
     required this.deathYear,
   });
@@ -17,8 +19,10 @@ class ArockInfo {
     return {
       'id': id,
       'quote': quote,
+      'who': who,
+      'star': star,
       'birthYear': birthYear,
-      'deatYear': deathYear,
+      'deathYear': deathYear
     };
   }
 
@@ -26,9 +30,10 @@ class ArockInfo {
     return ArockInfo(
       id: map['id'],
       quote: map['quote'],
-      from: map['from'],
+        who: map['who'],
+        star: map['star'],
       birthYear: map['birthYear'],
-      deathYear: map['deathYear'],
+        deathYear: map['deathYear']
     );
   }
 }

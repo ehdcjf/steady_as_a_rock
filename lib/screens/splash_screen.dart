@@ -21,7 +21,7 @@ class SplashScreen extends StatelessWidget {
           ),
           Container(
             margin: EdgeInsets.only(top: 32),
-            child: Text(
+            child: const Text(
               "Steady as 어록",
               style: TextStyle(
                   fontSize: 40,
